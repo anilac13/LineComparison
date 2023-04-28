@@ -8,7 +8,7 @@ namespace LineComparison
 {
     public class LineOperation
     {
-        public static void CalculateLength()
+        public static double CalculateLength()
         {
             Console.WriteLine("Enter length of x1");
             double x1 = Convert.ToInt32(Console.ReadLine());
@@ -18,8 +18,21 @@ namespace LineComparison
             double y1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter length of y2");
             double y2 = Convert.ToInt32(Console.ReadLine());
+
             double length = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
             Console.WriteLine("Length of a Line is: {0}", length);
+            return length;
+        }
+        public static void CheckEquality(double line1, double line2)
+        {
+            if (line1.Equals(line2))
+            {
+                Console.WriteLine("\nBoth the lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("\nLines are not Equal");
+            }
         }
     }
 }
