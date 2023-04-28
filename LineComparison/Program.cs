@@ -10,7 +10,8 @@ namespace LineComparison
             Console.WriteLine("\nCalculating length for Line 2 \n" + "==============================");
             double line2 = LineOperation.CalculateLength();
 
-            LineOperation.CheckEquality(line1, line2);
+            //LineOperation.CheckEquality(line1, line2);
+            LineOperation.CompareTwoLines(line1, line2);
         }
     }
 }

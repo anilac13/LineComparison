@@ -34,5 +34,20 @@ namespace LineComparison
                 Console.WriteLine("\nLines are not Equal");
             }
         }
+        public static void CompareTwoLines(double line1, double line2)
+        {
+            if (line1.CompareTo(line2) < 0)
+            {
+                Console.WriteLine("line2 is greater than line1");
+            }
+            else if (line1.CompareTo(line2) > 0)
+            {
+                Console.WriteLine("line1 is greater than line2");
+            }
+            else
+            {
+                Console.WriteLine("Both the lines are equal");
+            }
+        }
     }
 }
